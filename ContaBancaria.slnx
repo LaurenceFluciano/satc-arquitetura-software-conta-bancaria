@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/1 - Apresentação/">
+    <Project Path="ContaBancaria/ContaBancaria.csproj" />
+  </Folder>
+  <Folder Name="/2 - Dominio/">
+    <Project Path="Dominio/Dominio.csproj" />
+  </Folder>
+  <Folder Name="/3 - Repositório/">
+    <Project Path="Repositorio/Repositorio.csproj" />
+  </Folder>
+  <Folder Name="/Entidade/">
+    <Project Path="Entidade/Entidade.csproj" />
+  </Folder>
+  <Folder Name="/Itens de Solução/">
+    <File Path=".gitignore" />
+  </Folder>
+</Solution>
