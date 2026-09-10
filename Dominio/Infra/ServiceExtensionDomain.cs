@@ -6,7 +6,10 @@ namespace Dominio.Infra
 {
     public static class ServiceExtensionDomain
     {
-        public static void ConfigurarDominio(this IServiceCollection services, IConfiguration configuration)
+        public static void ConfigurarDominio(
+            this IServiceCollection services, 
+            IConfiguration configuration
+        )
         {
             ServiceExtensionRepository.ConfigurarRepositorio(services, configuration);
         }

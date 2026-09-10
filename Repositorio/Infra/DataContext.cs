@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entidade;
+using Microsoft.EntityFrameworkCore;
 
 namespace Repositorio.Infra
 {
-    internal class DataContext : DbContext
+    public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options)
             : base(options) 
@@ -10,8 +11,12 @@ namespace Repositorio.Infra
         
         }
 
+        public DbSet<ContaBancaria> ContasBancaria { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<ContaBancaria>().HasKey(p => p.Id);
+
             base.OnModelCreating(modelBuilder);
         }
     }

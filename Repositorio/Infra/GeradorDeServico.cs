@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Repositorio.Infra
 {
-    internal static class GeradorDeServico
+    public static class GeradorDeServico
     {
         public static ServiceProvider ServiceProvider;
 
